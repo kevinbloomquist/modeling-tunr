@@ -1,0 +1,19 @@
+<h2>New Manager</h2>
+
+<form ng-submit = "managerNewController.saveManager()">
+	<label for = "name">Name:</label>
+	<input id = "name" ng-model = "managerNewController.newManager.name">
+	<p>{{managerNewController.newManager.name}}</p>
+
+	<label for = "email">Email:</label>
+	<input id = "email" ng-model = "managerNewController.newManager.email">
+
+	<label for = "office_number">Office number:</label>
+	<input id = "office_number" ng-model = "managerNewController.newManager.office_number">
+
+	<label for = "cell_phone_number">Cell number:</label>
+	<input id = "cell_phone_number" ng-model = "managerNewController.newManager.cell_phone_number">
+
+	<input type="submit" name="Create">
+	
+</form>
