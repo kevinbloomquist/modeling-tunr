@@ -46,5 +46,19 @@ angular.module("tunrApp", ['ngRoute'])
 			.when('/managers', {
 				templateUrl: '/templates/managers/index.html',
 				controller: "ManagerIndexController as managersController"
-			});			
+			})
+
+			//New
+			.when('/managers/new', {
+				templateUrl: '/templates/managers/new.html',
+				controller: "ManagerNewController as managerNewController"
+			})
+
+			// show
+			.when('/managers/:id', {
+				templateUrl: '/templates/managers/show.html',
+				controller: "ManagerShowController as managerController"
+			});
+
+			
   });
